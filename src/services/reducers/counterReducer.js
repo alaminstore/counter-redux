@@ -9,12 +9,12 @@ export default function (state = initialState, action) {
     case increment_value:
       return {
         ...state,
-        counter: state.counter + 1,
+        counter: state.counter + action.payload,
       };
     case decrement_value:
       return {
         ...state,
-        counter: state.counter - 1,
+        counter: state.counter - action.payload,
       };
 
     default:

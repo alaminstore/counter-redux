@@ -7,11 +7,11 @@ function counter({ increment, decrement, count }) {
     <div>
       <h3>Counter: {count}</h3>
       <br />
-      <button className="btn btn-primary" onClick={() => increment()}>
+      <button className="btn btn-primary" onClick={() => increment(5)}>
         Increment
       </button>{" "}
       &nbsp;
-      <button className="btn btn-info" onClick={() => decrement()}>
+      <button className="btn btn-info" onClick={() => decrement(1)}>
         Decrement
       </button>
     </div>
